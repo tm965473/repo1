@@ -1,0 +1,9 @@
+from Ubuntu
+Run apt-get update -y
+Run apt-get install apache2 -y
+Run apt-get install git -y
+ADD. /var/www/html
+ENTRYPOINT apachectl-D  FOREGROUND
+VOLUME ["iccpinfotech"]
+EXPOSE 100
+CMD ["apache" ,"start"]
